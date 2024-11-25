@@ -1,3 +1,4 @@
+let ResultatValeurOrdinateur
 //Rôle : 
 //Arguments : dont on a besoin en tant que développeur
 //Retour : 
@@ -15,18 +16,21 @@ function ChoixDuJoueur() {
 //Arguments :  Rien
 //Retour : Le "choix de l'ordinateur"
 function ValeurOrdinateur() {
-    return Math.ceil(Math.random()*3)
+     ResultatValeurOrdinateur = Math.ceil(Math.random()*3)
+    return ResultatValeurOrdinateur
 }
 
 //Rôle : 
 //Arguments : dont on a besoin en tant que développeur
 //Retour : 
-function ChoixOrdinateur(a) {
-    if (a===1) {alert("🤖Papier")
-    }else if (a===2) {alert("🤖Caillou")
-    }else if (a===3) {alert("🤖Ciseaux")        
+function ChoixOrdinateur() {
+    if (ResultatValeurOrdinateur===1) {alert("🤖Papier")
+    }else if (ResultatValeurOrdinateur===2) {alert("🤖Caillou")
+    }else if (ResultatValeurOrdinateur===3) {alert("🤖Ciseaux")        
     }
 }
+
+console.log( ResultatValeurOrdinateur)
 
 //Rôle : 
 //Arguments : 
